@@ -18,4 +18,9 @@ yarn-error.log*
 # Keep environment variables out of version control
 .env
 
-/temp
+#arquivo temporario
+/tmp
+
+#arquivo de teste aleatorio
+/src/controllers/Testes
+/src/services/Testes
