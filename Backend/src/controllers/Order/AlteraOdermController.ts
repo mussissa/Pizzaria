@@ -23,7 +23,7 @@ class AlteraOrdemController{
     async handleManda(req:Request, res:Response){
         
         const {id} = req.body;
-        console.log(" Entrou no controller id : "+ id)
+        
         const ordem = new AlterOrdemService();
 
         const AlteraOrdem = await ordem.MandaPedido(id)

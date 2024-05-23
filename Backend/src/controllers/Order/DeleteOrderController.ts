@@ -9,7 +9,7 @@ class DeleteOrderController{
     async handle(req:Request, res:Response){
 
         const order_id = req.query.order_id as string;
-        console.log("entrou no contoller com ID :" + order_id)
+        
         const order = new DeleteOrderService();
 
 

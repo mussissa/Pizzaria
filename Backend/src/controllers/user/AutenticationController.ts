@@ -11,7 +11,7 @@ class AutenticationController{
           email,
           senha
         })
-        console.log(auth)
+        
         return res.json(auth);
     }
 

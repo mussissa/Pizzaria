@@ -22,11 +22,8 @@ class CreateUserService{
             throw new Error("usuario ja existe");
         }
 
-        console.log(userExist)
-
         const password = await hash(senha, 8)
 
-        console.log(password)
 
         const user = await prismaClient.user.create({
             data:{name:name, email:email, password:password},
@@ -37,7 +34,6 @@ class CreateUserService{
             }})
 
         
-        console.log("saindo do service")    
         return {user}
     }
 }

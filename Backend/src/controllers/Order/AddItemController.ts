@@ -7,7 +7,7 @@ class addItemController{
 
     async handle(req:Request, res: Response){
             const {amount, order_id, product_id} = req.body
-            console.log("entrou nocontroller " + amount +" "+order_id+" "+product_id )
+           
             const additem = new AddItemService();
 
 
