@@ -9,7 +9,8 @@ export function setupAPI(context = undefined){
     let cookies = parseCookies(context)
 
     const api = axios.create({
-        baseURL: 'http://localhost:3333',
+   //    baseURL: 'http://localhost:3333',
+        baseURL: 'https://pizzaria-9wp1.onrender.com/',
         headers:{
             Authorization: `Bearer ${cookies['@nextauth.token']}`
         }
